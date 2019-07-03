@@ -115,7 +115,6 @@ class Server extends Model implements AssignSwitchInterface
             [['tariff_id', 'sale_time'], 'required', 'on' => ['sale']],
             [['move_accounts'], 'safe', 'on' => ['sale']],
             [['id', 'type'], 'required', 'on' => ['set-type']],
-            [['dc'], 'unique']
         ];
     }
 
